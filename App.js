@@ -8,7 +8,7 @@ export default function App() {
       <View style={styles.content}>
         <TextInput placeholder='Email Address' style={styles.input} />
         <TextInput placeholder='password' style={styles.input} />
-        <Button title='Login' />
+        <Button color='#09a7ff' title='Login' />
       </View>
     </View>
   );
@@ -17,23 +17,25 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: "#aeffa8"
+    backgroundColor: "#2299ff"
   },
   content: {
     width: '100%',
     elevation: 2,
     shadowColor: '#000',
-    backgroundColor: '#fff',
+    backgroundColor: '#eef',
+    opacity: '50%',
     padding: 20,
-    borderRadius: 10,
+    borderRadius: 6,
   },
   login: {
-    fontSize: 25,
+    fontSize: 30,
     padding: 10,
+    color: 'white',
+    fontWeight: '600'
   },
   input: {
     padding: 10,
@@ -43,6 +45,6 @@ const styles = StyleSheet.create({
     width: '100%',
     marginHorizontal: 'auto',
     display: 'flex',
-    marginBottom: 20,
+    marginBottom: 20
   }
 });
